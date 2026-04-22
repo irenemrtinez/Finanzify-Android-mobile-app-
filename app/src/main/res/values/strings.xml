@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Finanzify</string>
+
+    <string-array name="lapsos_tiempo">
+        <item>Diario</item>
+        <item>Semanal</item>
+        <item>Mensual</item>
+        <item>Trimestral</item>
+        <item>Anual</item>
+    </string-array>
+
+    <string-array name="lapsos_tiempo_estadisticas">
+        <item>Todos los tiempos</item>
+        <item>Semanal</item>
+        <item>Mensual</item>
+        <item>Trimestral</item>
+        <item>Anual</item>
+        <item>Personalizado</item>
+    </string-array>
+
+    <string-array name="lapsos_tiempo_presu">
+        <item>Semanal</item>
+        <item>Mensual</item>
+        <item>Trimestral</item>
+        <item>Anual</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bg_ajustes"
+    tools:context=".Login.DobleAutenticacionActivity">
+
+    <TextView
+        android:id="@+id/textViewVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Verificación con 2 factores"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="30sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pon el número de teléfono asociado al usuario al que mandar el código de verificación"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de teléfono: +34xxxxxxxxx"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/botonEnviarCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar código de verificación"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ponga el número de verificación enviado"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código de verificación"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/botonVerificarCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar código"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

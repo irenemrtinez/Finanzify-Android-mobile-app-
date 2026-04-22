@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icono_small"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Finanzify"
+        tools:targetApi="31">
+        <activity
+            android:name=".TransaccionesRecurrentes.IngresoRecurrenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Historial.HistorialRecurrentesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Moneda.CambioMonedaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.DobleAutenticacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Presupuestos.CategoriasCrearPresupuestoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Presupuestos.CrearPresupuestoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Presupuestos.PrespuestoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Estadísticas.EstadisticasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Historial.HistorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransaccionesRecurrentes.PagoRecurrenteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Transacciones.CategoriasCrearIngresoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Transacciones.CrearIngresoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Transacciones.CategoriasCrearPagoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Transacciones.CrearPagoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Categorias.CrearCategoriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Categorias.CategoriasIngresosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Categorias.CategoriasPagosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.VerifyOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.SendOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ajustes.DialogoIconoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ajustes.NotificacionesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Finanzify" />
+        <activity
+            android:name=".Ajustes.EditPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ajustes.CambiarContraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ajustes.AjustesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.ContraOlvidadaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.RegistrarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaInicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".Ajustes.AlarmReceiver" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.finanzify.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

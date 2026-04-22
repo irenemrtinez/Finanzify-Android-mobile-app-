@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--  Base application theme.  -->
+    <style name="Base.Theme.Finanzify" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--  Customize your light theme here.  -->
+        <item name="colorPrimary">@color/verde_oscuro</item>
+    </style>
+    <style name="Theme.Finanzify" parent="Base.Theme.Finanzify">
+        <!--  Estilo de los botones  -->
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>
+    </style>
+    <!--  Estilo personalizado para los botones  -->
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <!--  Color de fondo del botón  -->
+        <item name="android:background">@color/verde_oscuro</item>
+        <!--  Color del texto del botón  -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- Nuevo estilo de botón -->
+    <style name="MyButtonStyle2" parent="Widget.AppCompat.Button">
+    <!-- Definir atributos de estilo personalizados para el nuevo botón -->
+    <!-- Por ejemplo, puedes cambiar el color de fondo y el tamaño del texto -->
+        <item name="android:background">@color/verde_claro</item>
+        <item name="android:textColor">@color/black</item>
+    <!-- Añadir más atributos de estilo según sea necesario -->
+    </style>
+</resources>

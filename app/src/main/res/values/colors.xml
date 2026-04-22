@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gris">#9B9B9B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name ="verde_oscuro">#0E3F0E</color>
+    <color name ="teal_200">#0E3F0E</color>
+    <color name ="teal_700">#0E3F0E</color>
+    <color name ="verde_medio">#005700</color>
+    <color name ="verde_claro">#FF8CB897</color>
+    <color name ="lavender">#FF8CB897</color>
+    <color name ="rojo_claro">#ff8c8c</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+</resources>

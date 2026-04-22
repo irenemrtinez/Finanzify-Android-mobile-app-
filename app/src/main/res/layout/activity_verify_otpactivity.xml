@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login.VerifyOTPActivity">
+
+    <TextView
+        android:id="@+id/textViewVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Código de Verificación"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:text="Se ha enviado el código de verificación al número"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="18sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewtlf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Pon el código recibido"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="14sp"
+        tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:hint="*123456"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/verde_oscuro"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textViewtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="¿No has recibido el código?"
+        android:textColor="@color/verde_claro"
+        android:textSize="14sp"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonConfirmar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangular_button_background"
+        android:text="Confirmar"
+        android:textSize="20dp" />
+
+</LinearLayout>

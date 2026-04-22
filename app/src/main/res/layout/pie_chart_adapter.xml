@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center_vertical">
+
+        <!--View to display the yellow color icon-->
+        <View
+            android:id="@+id/cuadrado"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+        <!--Text view to display R -->
+        <TextView
+            android:id="@+id/categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="R"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

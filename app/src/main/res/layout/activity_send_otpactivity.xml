@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Login.SendOTPActivity">
+
+    <TextView
+        android:id="@+id/textViewVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Verificación 2FA"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:text="Pon un número de teléfono al que mandar el código de verificación"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="18sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewtlf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Número de telefono"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="14sp"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewNumT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+34 "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="*123456789"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textColor="@color/verde_oscuro"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@android:color/darker_gray"/>
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rectangular_button_background"
+        android:text="Enviar"
+        android:textSize="20dp" />
+
+</LinearLayout>

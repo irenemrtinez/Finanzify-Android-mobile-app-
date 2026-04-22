@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".Transacciones.CategoriasCrearIngresoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/buttonVolver"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:scaleType="fitCenter"
+            android:background="@color/transparent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            app:tint="@color/verde_oscuro" />
+
+        <TextView
+            android:id="@+id/textViewSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categorias"
+            android:layout_marginHorizontal="80dp"
+            android:layout_gravity="center"
+            android:textColor="@color/verde_oscuro"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/buttonAnadir"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="0dp"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_add_24"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewPagos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:text="PAGOS"
+                android:textColor="@color/verde_claro"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textViewIngresos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:text="INGRESOS"
+                android:textColor="@color/verde_oscuro"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/transparent"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CategoryName"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"/>
+
+    <TextView
+        android:id="@+id/text_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequency:Weekly"
+        android:textSize="14sp"
+        android:textColor="#666"/>
+
+    <!--OtrosTextViewsyCheckBoxparamostrareltotal,fechadeinicio,siesrecurrente,etc.-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#FF5722"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/text_spent_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%spent"
+        android:textSize="14sp"
+        android:textColor="#666"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/gastado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gastado"
+            android:textSize="14sp"
+            android:textColor="#666"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70dp"
+            android:text="total"
+            android:textSize="14sp"
+            android:textColor="#666"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
