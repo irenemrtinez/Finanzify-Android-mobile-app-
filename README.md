@@ -18,15 +18,120 @@ This project was developed as part of a Bachelor's Thesis at the Universidad Pol
 * 👤 User profile and authentication system
 
 ---
-
 ## 🧠 Methodology
 
-The development followed a **User-Centered Design (UCD)** approach, ensuring that the application meets real user needs:
+The development of Finanzify followed a **User-Centered Design (UCD)** approach, ensuring that the application was designed around real user needs, behaviors, and expectations.
 
-* 🔍 Competitive analysis of existing finance apps
-* 👥 User interviews to understand financial habits
-* 🧪 Usability testing with real users
-* 🎨 High-fidelity prototyping before implementation
+### 🔍 Requirements Definition
+
+Based on a competitive analysis and user interviews, both **functional** and **interaction requirements** were defined:
+
+#### Functional Requirements
+
+* Income and expense tracking, including recurring transactions
+* Categorization of transactions with customizable categories
+* User account creation and authentication
+* Budget creation (monthly and category-based)
+* Notifications and alerts for financial activity and budget limits
+* Statistical reports with customizable time ranges
+* Security features such as two-factor authentication
+* Data export functionality
+* Multi-currency support for income registration
+
+#### Interaction Requirements
+
+* Fast and simple transaction input
+* High level of customization (categories, preferences)
+* Visually appealing and professional UI
+* Automation of repetitive processes (e.g., recurring transactions)
+* Mobile-first design (primary platform: smartphones)
+
+---
+
+### 🎨 Prototyping with Figma
+
+Before implementation, a **high-fidelity interactive prototype** was developed using Figma.
+
+Figma was chosen due to its flexibility in designing mobile interfaces and its ability to simulate realistic user interactions. Although it does not provide a direct framework for Android development, it allows exporting visual assets and serves as a solid foundation for later implementation in Android Studio.
+
+The prototype included all main application flows:
+
+* User registration and authentication
+* Transaction creation (income and expenses)
+* Budget management
+* Statistics visualization
+* Category management
+
+---
+
+### 🧪 Usability Testing
+
+A total of **8 usability tests** were conducted with real users to evaluate the prototype.
+
+Each test included:
+
+* Introduction and explanation of the test
+* Demographic questionnaire
+* 8 specific tasks (e.g., registering a user, creating budgets, viewing statistics)
+* SUS (System Usability Scale) questionnaire
+
+#### Key Findings:
+
+* Most tasks were completed successfully by all users
+* Tasks related to **budgets, recurring transactions, and category management** showed the highest difficulty
+* Some usability issues were caused by unclear navigation or labeling
+
+#### Metrics Collected:
+
+* Number of errors per task
+* Number of actions vs. optimal actions
+* User questions and qualitative feedback
+
+---
+
+### 📊 Usability Results
+
+* High usability in basic tasks (registration, navigation, statistics)
+* Greater difficulty in complex features (budgets and recurring transactions)
+* Strong results in **learnability and perceived security**
+* Mixed results in **system consistency**, indicating areas for improvement
+
+The SUS questionnaire results showed:
+
+* Positive perception of ease of use
+* Very high learnability (users required little to no assistance)
+* Strong sense of security among users
+* Opportunities to improve consistency and navigation
+
+---
+
+### 🔧 Iterative Design Improvements
+
+Based on usability testing, several key improvements were implemented in the prototype:
+
+* Improved visibility and accessibility of key features (e.g., budgets, categories)
+* Redesigned navigation to reduce user confusion
+* Enhanced recurring transaction logic (clear duration instead of repetition ambiguity)
+* Added back navigation to all flows to prevent user frustration
+* Improved consistency and placement of UI elements
+* Increased size and clarity of important icons (e.g., settings)
+
+These changes significantly improved usability, reduced user errors, and aligned the system more closely with user mental models.
+
+---
+
+### 📱 Implementation
+
+After validating the prototype, the application was implemented using:
+
+* **Android Studio**
+* **Java**
+
+The transition from Figma to development included translating UI designs into Android layouts and integrating application logic, ensuring consistency with the validated prototype.
+
+---
+
+This iterative and user-centered process ensured that the final application is not only functional, but also intuitive, efficient, and aligned with user expectations.
 
 ---
 
@@ -36,6 +141,7 @@ The development followed a **User-Centered Design (UCD)** approach, ensuring tha
 * **Android Studio**
 * **Firebase** (authentication & services)
 * **Gradle**
+* **Figma**
 
 ---
 
