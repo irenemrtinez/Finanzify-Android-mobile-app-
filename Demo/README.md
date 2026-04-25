@@ -1,43 +1,44 @@
-# 📱 Finanzify – Personal Finance Management App
+# Finanzify – Personal Finance Management App
 
-## 📖 Overview
+## Overview
 
-**Finanzify** is a personal finance management application designed to help users track, organize, and understand their financial activity in a simple and intuitive way.
+Finanzify is a personal finance management application designed to help users track, organize, and understand their financial activity in a simple and intuitive manner.
 
-This repository includes the **final project presentation**, which summarizes the entire development process of the application—from research to design, prototyping, and usability testing.
-
----
-
-## 📊 Project Presentation
-
-The included presentation provides a complete overview of the project, covering:
-
-- 📌 Competitive analysis  
-- 🌍 Context of use analysis  
-- 🎨 UI/UX design using Figma  
-- 📋 Functional and interaction requirements  
-- 🧪 Interactive prototype development  
-- 🧑‍🔬 Usability testing and evaluation  
-- 📈 Results and conclusions  
+This repository includes the final project presentation, which summarizes the complete development process of the application, from initial research to design, prototyping, and usability testing.
 
 ---
 
-## 🎥 Demo Video
+## Project Presentation
 
-The presentation includes a full **narrated demo video in Spanish (Slide 23)** lasting approximately **8 minutes**, where the main functionalities of the application are shown in detail.
+The included presentation provides a comprehensive overview of the project, covering the following aspects:
 
-### 🧩 Features demonstrated:
+- Competitive analysis  
+- Context of use analysis  
+- User interface and user experience design using Figma  
+- Functional and interaction requirements  
+- Interactive prototype development  
+- Usability testing and evaluation  
+- Results and conclusions  
+
+---
+
+## Demo Video
+
+The presentation includes a fully narrated demonstration video in Spanish (Slide 23), with a duration of approximately 8 minutes, showcasing the main functionalities of the application in detail.
+
+### Features Demonstrated
+
 - User registration and login  
 - Profile management and editing  
 - Two-factor authentication (2FA)  
-- Transaction management (add, view, and track expenses/income)  
+- Transaction management (adding, viewing, and tracking income and expenses)  
 - Currency conversion  
 - Financial history overview  
-- Notifications system  
+- Notification system  
 - Data export functionality  
 
 ---
 
-## 📁 Repository Content
+## Repository Content
 
-- `Demo/TFG_Finanzify.pptx` → Complete project presentation (includes embedded demo video)
+- `Demo/TFG_Finanzify.pptx` – Complete project presentation, including the embedded demo video
